@@ -1,87 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Escola DNC</title>
+    <title>Desadio-LP-Pedro</title>
 </head>
-
 <body>
-    <!-- Menu Superior -->
-    <div id="menusuperior">
-        <a target="_blank" href="https://www.escoladnc.com.br/">
-            <img src="/imagens/logo.svg" id="logo" alt="ERROR">
-        </a>
-        <h1 id="titulo-menusuperior">Dê os primeiros passos da<br>
-            sua carreira em tecnologia
-        </h1>
-        <p id="texto-menusuperior">Inscreva-se no curso gratuito de introdução à<br>
-            tecnologia da DNC School e aprenda os principais<br>
-            fundamentos para construir experiências efetivas.
-        </p>
-        <script src="index.js"></script>
-    </div>
-    <!-- Menu Infomacional -->
-    <div id="menuinformacional">
-        <p class="textoinformativo">
-            <img src="/icones/certificado.svg" class="icone" id="certificado" alt="ERROR">Certificado de conclusão
-        </p>
-        <p class="textoinformativo">
-            <img src="/icones/relogio.svg" class="icone" id="relogio" alt="ERROR">4 horas de conteúdo
-        </p>
-        <p class="textoinformativo">
-            <img src="/icones/camera.svg" class="icone" id="camera" alt="ERROR">Aulas online gravadas
+    <!--MENU SUPERIOR-->
+
+    <div id="memu-superior">
+        <h1  id="titulo-superior">Tradição em projetos de arquitetura</h1>
+        <p  id="texto-superior">
+            Arquitetura residencial e comercial. 
         </p>
     </div>
-    <!-- Seção vídeo -->
-    <div id="secaovideo">
-        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4"
-            title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        <div>
-            <h1 id="titulovid">Aprenda com especialistas e<br>
-                comece seu primeiro projeto
-            </h1>
-            <br><br>
-            <p id="textovideo">
-                Conheça o processo de desenvolvimento e entenda como utilizar<br>
-                os principais métodos e ferramentas da área para resolver<br>
-                problemas complexos.<br><br>
-                Conquiste seu certificado e desenvolva um projeto prático para<br>
-                aplicar seus conhecimentos.
-            </p>
+
+    <!--MENU INFORMACIONAL-->
+
+    <div id="memu-informacional">
+
+        <div class="text">
+            <h1 class="titulo" id="titulo1"> 850 </h1>
+            <p class="texto" id="texto1">empreendimentos construídos</p>
+        </div>
+
+        <div class="text">
+            <h1 class="titulo" id="titulo2" > 40 </h1>
+            <p class="texto" id="texto2">anos de mercado e experiência</p>
+        </div>
+
+        <div class="text">
+            <h1 class="titulo" id="titulo3"> 2,000,000 </h1>
+            <p class="texto" id="texto3">m² em projetos construídos</p>
         </div>
     </div>
-    <!-- CARROSEL -->
-    <div id="carrosel">
-        <h1 id="titulo-carrosel">Mais de 500 alunos já iniciaram seus estudos</h1>
-        <!-- Divisão dos cards-->
-        <div id="div-cards">
-            <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="./icones/seta-esquerda.svg" alt="">
-            <img id="leonardo" class="card" src="./cards/leonardo.svg" alt="">
-            <img id="samantha" class="card" src="./cards/samantha.svg" alt="">
-            <img id="bruna" class="card" src="./cards/bruna.svg" alt="">
-            <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="./icones/seta-direita.svg" alt="">
-        </div>
+
+    <!--SEÇÃO IMAGEM-->
+
+    <div id="secao-imagem">
+        <div id="infotexto">
+            <h1 id="titulo-imagem">Arquitetos com História e Experiência.</h1>
+            <p id="texto-imagem"> Nós realizamos desde 2002 projetos e gerenciamento de obras.<br> Com mais de 800 projetos e 2.000.000 de m² construídos, tendo<br> como principal proposta transformar em realidade os sonhos de<br> seus clientes, criando projetos personalizados, unindo a tradição<br>e a modernidade em nossos projetos. </p>
+            
+        </div> 
+        <img id="seta-esquerda" class="seta" onclick="RolarParaEsquerda()" src="./icones/seta-esquerda.png" alt="" >
+        <img id="imagem" src="./imagens/imagem.svg" alt="error">
+        <img id="imagem2" src="./imagens/7U2A9893-HDR.jpg" alt="" >
+        <img id="seta-direita" class="seta" onclick="RolarParaDireita()" src="./icones/seta-direita.png""> 
+            
+        
     </div>
-    <!-- Formulário -->
+
+    <!--FORMULARIO-->
     <div id="formulario">
-        <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
-        <form action="https://api.sheetmonkey.io/form/DtQYDaT4mWzZTv3hxVF1f" method="post">
-            <input type="text" placeholder="Nome" name="Name" required> <br>
-            <input type="email" placeholder="Email" name="Email" required> <br>
-            <input type="number" placeholder="Telefone" name="Phone"> <br>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <button type="submit">Acesse a emenda grátis</button>
-        </form>
+    <h1 id="titulo-formulario">Conheça mais sobre nossos serviços:</h1>
+    <form action="https://api.sheetmonkey.io/form/sARfbzfJx6smwQVbqLtg6x" method="post">
+        <input type="text" placeholder="Nome" name="Name" required> <br>
+        <input type="email" placeholder="Email" name="Email" required> <br>
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <button type="submit">Fale Conosco</button>
+    </form>
     </div>
+
     <script src="index.js"></script>
 </body>
-
 </html>
