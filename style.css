@@ -1,136 +1,155 @@
-* {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+*{
+    margin: 0px;
+    font-family: "inter";  
 }
 
-#logo {
-    margin-left: 50px;
-    margin-top: 50px;
+#memu-superior{
+    height: 370px;
+    background-color:#303030 ;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 80px;
 }
 
-#titulo-menusuperior {
-    margin-left: 150px;
-    margin-top: 50px;
+#titulo-superior{
+    margin-top: 150px;
+    margin-left: 62px;
+    font-size: 60px;
 }
 
-#texto-menusuperior {
-    margin-left: 150px;
-    margin-top: 35px;
-    padding-bottom: 100px;
-}
-
-#menusuperior {
-    background-image: url(imagens/fundo-menusuperior.svg);
-    color: aliceblue;
-}
-
-#menuinformacional {
-    background-color: #eaece5;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-}
-
-.icone {
-    margin: 50px 0 50px 100px;
-    padding: 25px;
-}
-
-#secaovideo {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-}
-
-.textoinformativo {
-    display: flex;
-    align-items: center;
-}
-
-#titulovid {
-    color: #247ba0;
-    margin-top: 50px;
-}
-
-#video {
-    margin: 50px 25px 50px 100px;
-}
-
-#carrosel {
-    background-color: #247ba0;
-    padding: 50px;
-}
-
-#titulo-carrosel {
-    color: white;
-    text-align: center;
+#texto-superior{
+    margin-top: 20px;
+    margin-left: 62px;
     font-size: 25px;
 }
 
-#div-cards {
-    margin-top: 25px;
+#memu-informacional{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: auto;
+    background-color: #f9f9f9;
+    padding: 4%;
 }
 
-.card {
-    margin-left: 50px;
+.titulo{
+    margin-left: 200px
 }
 
-#seta-esquerda {
-    display: none;
+.texto{
+    margin-bottom: 15px;
+    margin-left: 200px;
+    font-size: 20px;
 }
 
-#bruna {
-    display: none;
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline
 }
 
-.seta {
-    margin-top: 35%;
+#secao-imagem{
+    display: grid;
+    grid-auto-flow: column;
+    display: flex;
+    align-items:center;
+}
+
+#imagem{
+    flex-wrap: nowrap ;
+    margin-left: 150px;
+    margin: 70px 0px 70px 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+#infotexto{
+   margin: 0px 50px;
+   padding-left: 70px ;
+}
+
+#titulo-imagem{
+    font-size: 50px;
+    margin-bottom: 50px;
+
+}
+
+#texto-imagem{
+    font-size: 30px;
+    
+}
+
+#formulario{
+    text-align: center;
+    background-color: #303030;
+    height: 638px;
+    top: 1478px;
+
+}
+
+#titulo-formulario{
+    font-size: 32px;
+    margin: 25px;
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+input{
+    width: 420px;
+    height: 52px;
+    background-color: white;
+    margin: 15px;
+    border:0px;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+
+button{
+    background-color: #C07212;
+    color: #FFFFFF;
+    height: 50px;
+    width: 250px;
+    border:0px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-weight: bolder;
     cursor: pointer;
+    font-size: 20px;
+    
 }
 
-.seta:hover {
+button:hover{
+    background-color: #c77b1e; 
+    color: #FFFFFF;
     transform: translateY(-7px);
+    box-shadow: 0px 15px 20px #774405;
     transition-duration: 0.5s;
 }
 
-#formulario {
-    text-align: center;
-    margin: 25px;
-    color: #383838;
-}
 
-#titulo-formulario {
-    font-size: 25px;
-}
-
-input {
-    width: 300px;
-    height: 40px;
-    background-color: #eaece5;
-    margin: 15px;
-    border: 0;
-    border-radius: 5px;
-    padding-left: 10px;
-}
-
-button {
-    background-color: #247ba0;
-    height: 40px;
-    width: 250px;
-    color: #eaece5;
-    border: 0px;
-    margin-bottom: 50px;
-    font-weight: bolder;
+#seta-direita{
+    width: 50px;
+    padding-left: 30px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #318fd8;
-    color: white;
+#seta-esquerda{
+    width: 50px;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#imagem2{
+    display: none;
+    margin: 70px 0px 70px 50px;
+    height: 605px;
+    width: 510px;
+    border-radius: 30px ;
+
+}
+
+.seta:hover{
     transform: translateY(-7px);
-    box-shadow: 0px 15px 20px #05103081;
-    transition-duration: 0.3;
+    transition-duration: 0.5s;
 }
